@@ -1,0 +1,117 @@
+body {
+    font-size: 15pt;
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+.thumb {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+}
+
+.thumb:hover{
+  box-shadow: 0 0 100 white;
+}
+
+.register{
+  float: right;
+}
+
+.about{
+  float: left;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  height: 70px;
+}
+
+#bdy{
+  position: absolute;
+  background-image: url("back.jpg");
+  background-size: cover;
+  opacity: .7;
+  height: 300px;
+  width: 100%;
+}
+
+h3{
+  text-shadow: 2px,2px,4px,black;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  padding: 17px;
+  height: 300px;
+  position: absolute;
+}
+
+.loginbtn{
+  background-color: #1475FF;
+  color: white;
+  width: 90px;
+  height: 40px;;
+  border-style: none;
+}
+
+.loginbtn:hover{
+  background-color: #38CC54;
+  vertical-align: center;
+  box-shadow: 0,0,5px,black;
+}
+
+#right {
+  right: 30px;
+  top: 90px;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+}
+
+#left {
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-iteration-count:1;
+  left: 10px;
+  top: 0px;
+}
+
+.container{
+  height: 0px;
+  padding: 5px;
+  padding-top: 300px;
+}
+
+.sub-container{
+  padding: 10px;
+  background-color: #606060;
+  position: relative;
+}
+
+@media screen and (min-width:800px){
+  #right{
+    top: 70px;
+    right: 150px;
+  }
+  
+  #left{
+    left: 150px;
+    top: 0px;
+  }
+}
+
+@keyframes fade-in{
+  0%{
+    opacity:0;
+  } 
+  100%{
+    opacity:1;
+  }
+}
